@@ -21,10 +21,6 @@ new Vue({
         firebase.init(config).then(
             instance => {
                 console.log("firebase.init done");
-
-                cars.load().then((data) => {
-                    this.cars = Object.values(data);
-                })
             },
             error => {
                 console.log(`firebase.init error: ${error}`);

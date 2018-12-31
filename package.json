@@ -15,7 +15,7 @@
         "@vue/devtools": "^5.0.0-beta.3",
         "nativescript-camera": "^4.1.1",
         "nativescript-imagepicker": "~6.0.0",
-        "nativescript-plugin-firebase": "~7.4.0",
+        "nativescript-plugin-firebase": "^7.4.6",
         "nativescript-socket.io": "^0.9.0",
         "nativescript-theme-core": "~1.0.4",
         "nativescript-toast": "^1.4.6",
