@@ -2,36 +2,18 @@ import firebase from "nativescript-plugin-firebase";
 import config from "./shared/firebase-config";
 
 import Vue from "nativescript-vue";
+import VueDevtools from 'nativescript-vue-devtools'
 
-import RadListView from "nativescript-ui-listview/vue";
-
-Vue.use(RadListView);
+Vue.use(VueDevtools);
 
 Vue.config.silent = (TNS_ENV === 'production');
 
 import cars from "./shared/cars/car-service";
 
-import CarList from "./components/CarList";
-import CarDetails from "./components/CarDetails";
-import CarDetailsEdit from "./components/CarDetailsEdit";
+import Start from "./components/Start";
 
 new Vue({
-
-    template: `
-        <Frame>
-            <CarList :cars="cars" />
-        </Frame>`,
-
-    components: {
-        CarList,
-        CarDetails,
-        CarDetailsEdit
-    },
-
-    data: {
-        cars: []
-    },
-
+    render: h => h(Start),
     created() {
         firebase.init(config).then(
             instance => {
@@ -46,4 +28,8 @@ new Vue({
             }
         );
     }
-}).$start();
+}).$start({
+    getRootView(self) {
+      return self.$el.nativeView;
+    },
+  });
