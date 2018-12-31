@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "33002893899",
-    "firebase_url": "https://car-rental-b26b7.firebaseio.com",
-    "project_id": "car-rental-b26b7",
-    "storage_bucket": "car-rental-b26b7.appspot.com"
+    "project_number": "766050780319",
+    "firebase_url": "https://product-scanner-app.firebaseio.com",
+    "project_id": "product-scanner-app",
+    "storage_bucket": "product-scanner-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:33002893899:android:1aa8448c56b58a16",
+        "mobilesdk_app_id": "1:766050780319:android:f61dc8ec28bbe9d1",
         "android_client_info": {
-          "package_name": "org.nativescript.template"
+          "package_name": "com.tns.NativeScriptApplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "33002893899-9vqs9kk47iuj43ofml42tosba2f3rk2u.apps.googleusercontent.com",
+          "client_id": "766050780319-ifg9tencmhf8jgjckcuddeiv9uoho32q.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCijF8lzSzSoCAAIjeiyR9IZBN6FEE8L4k"
+          "current_key": "AIzaSyCTN5IgDsdP72joBLCv03MtQUsGYXqR44M"
         }
       ],
       "services": {

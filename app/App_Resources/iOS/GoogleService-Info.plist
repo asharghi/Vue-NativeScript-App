@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>33002893899-tc7ct9av9cviej1onanmmq6pm5966j7u.apps.googleusercontent.com</string>
+	<string>766050780319-qm91q1o74s7rjlg9asvj8gcg6q2iseqr.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.33002893899-tc7ct9av9cviej1onanmmq6pm5966j7u</string>
+	<string>com.googleusercontent.apps.766050780319-qm91q1o74s7rjlg9asvj8gcg6q2iseqr</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCJ0KcyECoJpMIcdmJ-rMybLWcV7Ce1FNU</string>
+	<string>AIzaSyAoWqsroHwoJxoPbhXIscQagUBP_wmPG0g</string>
 	<key>GCM_SENDER_ID</key>
-	<string>33002893899</string>
+	<string>766050780319</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>org.nativescript.template</string>
+	<string>org.nativescript.MyFirstVueMobileApp</string>
 	<key>PROJECT_ID</key>
-	<string>car-rental-b26b7</string>
+	<string>product-scanner-app</string>
 	<key>STORAGE_BUCKET</key>
-	<string>car-rental-b26b7.appspot.com</string>
+	<string>product-scanner-app.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:33002893899:ios:1aa8448c56b58a16</string>
+	<string>1:766050780319:ios:40cfabd045221b95</string>
 	<key>DATABASE_URL</key>
-	<string>https://car-rental-b26b7.firebaseio.com</string>
+	<string>https://product-scanner-app.firebaseio.com</string>
 </dict>
 </plist>

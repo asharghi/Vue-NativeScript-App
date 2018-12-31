@@ -12,6 +12,9 @@ import cars from "./shared/cars/car-service";
 
 import Start from "./components/Start";
 
+Vue.registerElement('MLKitBarcodeScanner', () => require("nativescript-plugin-firebase/mlkit/barcodescanning").MLKitBarcodeScanner);
+Vue.registerElement('MLKitTextRecognition', () => require("nativescript-plugin-firebase/mlkit/textrecognition").MLKitTextRecognition);
+
 new Vue({
     render: h => h(Start),
     created() {
