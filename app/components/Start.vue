@@ -5,20 +5,19 @@
             <Label class="action-bar-title" text="Start" horizontalAlignment="center" />
         </ActionBar>
 
-        <Button @tap="goToScanner" text="Go to scanner"/>
+        <Button @tap="goToSimpleScanner" text="Ta bilde scan"/>
 
         </Page>
     </Frame>
 </template>
 
 <script>
-    import Scanner from "./Scanner";
+    import SimpleScanner from "./SimpleScanner";
 
     export default {
         methods: {
-            goToScanner() {
-               // this.$navigateTo(Scanner, { props: { car: e.item } });
-                this.$navigateTo(Scanner);
+            goToSimpleScanner() {
+                this.$navigateTo(SimpleScanner);
             }
         }
     };
