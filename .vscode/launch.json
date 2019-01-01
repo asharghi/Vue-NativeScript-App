@@ -5,42 +5,42 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch on iOS",
+            "name": "HMR on iOS",
             "type": "nativescript",
             "request": "launch",
             "platform": "ios",
             "appRoot": "${workspaceRoot}",
             "sourceMaps": true,
             "watch": true,
-             "stopOnEntry": true,
-            "tnsArgs": ["--bundle", "--debug-brk"]
+            "tnsArgs": ["--bundle", "--hmr"]
         },
         {
-            "name": "Attach on iOS",
+            "name": "Debug on iOS",
             "type": "nativescript",
-            "request": "attach",
+            "request": "launch",
             "platform": "ios",
             "appRoot": "${workspaceRoot}",
             "sourceMaps": true,
-            "watch": false
-        },
-        {
-            "name": "Launch on Android",
-            "type": "nativescript",
-            "request": "launch",
-            "platform": "android",
-            "appRoot": "${workspaceRoot}",
-            "sourceMaps": true,
-            "watch": true
-        },
-        {
-            "name": "Attach on Android",
-            "type": "nativescript",
-            "request": "attach",
-            "platform": "android",
-            "appRoot": "${workspaceRoot}",
-            "sourceMaps": true,
-            "watch": false
+            "watch": false,
+            "tnsArgs": ["--bundle", "--debug-brk"]
         }
+        // ,{
+        //     "name": "Launch on Android",
+        //     "type": "nativescript",
+        //     "request": "launch",
+        //     "platform": "android",
+        //     "appRoot": "${workspaceRoot}",
+        //     "sourceMaps": true,
+        //     "watch": true
+        // },
+        // {
+        //     "name": "Attach on Android",
+        //     "type": "nativescript",
+        //     "request": "attach",
+        //     "platform": "android",
+        //     "appRoot": "${workspaceRoot}",
+        //     "sourceMaps": true,
+        //     "watch": false
+        // }
     ]
 }
