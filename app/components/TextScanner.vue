@@ -8,7 +8,7 @@
                 <Label text="2. Scan tekst" horizontalAlignment="center" />
                 <MLKitTextRecognition
                     width="100%"
-                    height="300"
+                    height="350"
                     preferFrontCamera="false"
                     @scanResult="onScanResult">
                 </MLKitTextRecognition>
