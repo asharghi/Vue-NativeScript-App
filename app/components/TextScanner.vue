@@ -12,7 +12,7 @@
                     preferFrontCamera="false"
                     @scanResult="onScanResult">
                 </MLKitTextRecognition>
-                <Label :text="labelText" horizontalAlignment="center" />
+                <Label :text="labelText" textWrap="true" horizontalAlignment="center" />
         </StackLayout>
     </Page>
 </template>
@@ -26,7 +26,14 @@
         },
         methods: {
             onScanResult: function(event) {
-                console.log("onScanResult: "+event);
+               let comp = this;
+               if(event && event.value && event.value.blocks && event.value.blocks.length > 0){
+                    let tempLabel = "";
+                    event.value.blocks.forEach(function(element) {
+                        tempLabel += element.text + "\n";
+                    });
+                    comp.labelText = tempLabel;
+               }
             },
             onCancelButtonTap() {
                 this.$navigateBack();

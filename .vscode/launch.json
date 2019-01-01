@@ -12,10 +12,8 @@
             "appRoot": "${workspaceRoot}",
             "sourceMaps": true,
             "watch": true,
-            "sourceMapPathOverrides": {
-            "webpack:///*": "${workspaceRoot}/src/*"
-            },
-            "tnsArgs": ["--bundle", "--hmr"]
+             "stopOnEntry": true,
+            "tnsArgs": ["--bundle", "--debug-brk"]
         },
         {
             "name": "Attach on iOS",

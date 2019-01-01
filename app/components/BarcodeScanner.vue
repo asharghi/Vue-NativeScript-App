@@ -6,11 +6,11 @@
         </ActionBar>
         <StackLayout>
                 <Label text="1. Scan strekkoden" horizontalAlignment="center" />
-                <!-- formats="QR_CODE, EAN_8, EAN_13" -->
                 <MLKitBarcodeScanner
                     width="100%"
                     height="300"
-                    processEveryNthFrame="20"
+                    formats="QR_CODE, EAN_8, EAN_13"
+                    processEveryNthFrame="10"
                     preferFrontCamera="false"
                     @scanResult="onScanResult">
                 </MLKitBarcodeScanner>
@@ -29,22 +29,9 @@
         methods: {
             onScanResult: function(event) {
                 let barcodes = event.value.barcodes;
-
                 if(barcodes.length > 0){
-                    this.labelText = JSON.stringify(barcodes)
-
-                    alert({
-                        title: "Barcode Scanned!",
-                        message: "",
-                        okButtonText: "Lukk"
-                    }).then(() => {
-                        console.log("Alert dialog closed");
-                    });
-
+                    this.labelText = barcodes[0].format + ": " + barcodes[0].value;
                 }
-
-
-                
             },
             onCancelButtonTap() {
                 this.$navigateBack();
