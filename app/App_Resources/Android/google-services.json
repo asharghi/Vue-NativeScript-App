@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:766050780319:android:f61dc8ec28bbe9d1",
+        "mobilesdk_app_id": "1:766050780319:android:40cfabd045221b95",
         "android_client_info": {
-          "package_name": "com.tns.NativeScriptApplication"
+          "package_name": "org.nativescript.MyFirstVueMobileApp"
         }
       },
       "oauth_client": [
