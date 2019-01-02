@@ -8,6 +8,7 @@
             <Button @tap="goToSimpleScanner" text="Ta bilde"/>
             <Button @tap="goToBarcodeScanner" text="Barcode Scan"/>
             <Button @tap="goToTextScanner" text="Text Scan"/>
+            <Button @tap="goToReadForMe" text="ReadForMe"/>
         </StackLayout>
         </Page>
     </Frame>
@@ -17,6 +18,7 @@
     import SimpleScanner from "./SimpleScanner";
     import BarcodeScanner from "./BarcodeScanner";
     import TextScanner from "./TextScanner";
+    import ReadForMe from "./ReadForMe";
 
     export default {
         methods: {
@@ -28,6 +30,9 @@
             },
             goToTextScanner() {
                 this.$navigateTo(TextScanner);
+            },
+            goToReadForMe() {
+                this.$navigateTo(ReadForMe);
             }
         },
         
