@@ -8,8 +8,6 @@ Vue.use(VueDevtools);
 
 Vue.config.silent = (TNS_ENV === 'production');
 
-import cars from "./shared/cars/car-service";
-
 import Start from "./components/Start";
 
 Vue.registerElement('MLKitBarcodeScanner', () => require("nativescript-plugin-firebase/mlkit/barcodescanning").MLKitBarcodeScanner);
